@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Roboto 700 & 400 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Roboto 700 & 400 -->
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="./index.js"></script>
+    <title>Buscador</title>
+  </head>
+  <body>
+    <div id="root">
+      <header class="header">
+        <form class="form">
+          <input name="input" class="form__input" placeholder="Producto.." />
+          <button class="form__button">Buscar</button>
+        </form>
+      </header>
+      <main class="main">
+        <div class="results"></div>
+
+        <div class="products">
+          <template class="template">
+            <div class="product">
+              <div class="product__cont-img">
+                <img class="product__img" src="" alt="" />
+              </div>
+              <div class="product__description">
+                <h3 class="product__name"></h3>
+                <p class="product__state"></p>
+                <p class="product__sells"></p>
+              </div>
+              <div class="price">
+                <p class="product__price"></p>
+              </div>
+            </div>
+          </template>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

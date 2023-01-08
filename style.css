@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto";
+}
+
+.header {
+  background-color: #fff159;
+  height: 68px;
+  padding: 0 12px;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  gap: 14px;
+}
+
+.form__input {
+  padding: 0 0 0 12px;
+  font-size: 12px;
+}
+@media (min-width: 437px) {
+  .form__input {
+    font-size: 18px;
+    width: 375px;
+  }
+}
+
+.form__button {
+  font-size: 12px;
+  font-weight: 700;
+  background-color: #ffffff;
+}
+@media (min-width: 437px) {
+  .form__button {
+    font-size: 16px;
+  }
+}
+@media (min-width: 480px) {
+  .form__button {
+    width: 121px;
+  }
+}
+
+.form__button,
+.form__input {
+  height: 30px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+}
+@media (min-width: 480px) {
+  .form__button,
+  .form__input {
+    height: 44px;
+  }
+}
+
+.results {
+  display: flex;
+  margin: 16px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.results__text {
+  margin: 0;
+}
+
+/* //////////////////--Products--////////////////// */
+
+.products {
+  padding: 0 20px;
+}
+
+.product {
+  cursor: pointer;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  max-width: 510px;
+  margin: 0 auto 15px auto;
+}
+
+.product__description {
+  margin: 0 5px 0 5px;
+}
+@media (min-width: 480px) {
+  .product__description {
+    margin: 0 115px 0 5px;
+  }
+}
+
+.product__img {
+  width: 70px;
+  height: 70px;
+}
+@media (min-width: 480px) {
+  .product__img {
+    width: 128px;
+    height: 128px;
+  }
+}
+
+.product__name,
+.product__state,
+.product__sells,
+.product__price {
+  margin: 0;
+}
+
+.product__name {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 5px 0;
+}
+
+.product__state {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 0 70px 0;
+}
+
+.product__sells {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.product__price {
+  font-size: 20px;
+  font-weight: 700;
+  color: #5791a4;
+}
+@media (min-width: 480px) {
+  .product__price {
+    font-size: 28px;
+  }
+}
